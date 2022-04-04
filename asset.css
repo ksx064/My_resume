@@ -1,58 +1,75 @@
 body {
     background-color: #D9D9D9;
 }
-header{
+
+header,
+.nav a:hover,
+.resume {
+    color: white;
+}
+
+header,
+nav,
+.background,
+main,
+.se,
+.nav,
+.resume {
+    display: flex;
+}
+
+header {
     position: sticky;
     top: 0px;
-    color: white;
     font-size: 35.9px;
+    font-style: bold;
     background-color: #3A3E40;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    display: flex;
     font-family: SoukouMincho;
     float: left;
     padding: 5px;
 }
+
 nav {
-    position: sticky;
-    top: 0px;
     justify-content: flex-end;
-    display: flex;
     font-family: SoukouMincho;
-    color: #0D0D0D;
+    color: #D9D9D9;
     background-color: #3A3E40;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     float: right;
     padding: 5px;
 }
-.background{
+
+.background {
     position: sticky;
     top: -10px;
     left: 10px;
-    display: flex;
-    width: 480px;
+    height: 540px;
+    width: 720px;
     z-index: -1;
 }
-main{
-    display: flex;
-    flex-flow:row wrap;
+
+main {
+    flex-flow: row wrap;
 }
-.in{
+
+.se {
     position: static;
-    display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    height: auto;
+    height: 800px;
+    align-items: flex-start;
 }
-.i{
-   
-}
-li{
+
+.i {}
+
+li {
     list-style: none;
     clear: both;
 }
+
 .nav a {
     color: inherit;
     display: block;
@@ -61,7 +78,6 @@ li{
 }
 
 .nav a:hover {
-    color: #D9D9D9;
     background-color: #0D0D0D;
     border-radius: 25px;
 }
@@ -71,32 +87,91 @@ nav>ul {
 }
 
 .nav {
-    display: flex;
+    position: sticky;
+    top: 0px;
     justify-content: center;
 }
-.resume{
-    
-}
-.resume:hover{
 
+.resume {
+    position: sticky;
+    top: 0px;
+    font-size: 35.9px;
+    font-style: bold;
+    background-color: #3A3E40;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-family: SoukouMincho;
+    float: left;
+    padding: 5px;
 }
+
+.resume:hover {}
+
 /* Color Theme Swatches in Hex */
-.建筑-1-hex { color: #979FA6; }
-.建筑-2-hex { color: #3A3E40; }
-.建筑-3-hex { color: #525759; }
-.建筑-4-hex { color: #D9D9D9; }
-.建筑-5-hex { color: #0D0D0D; }
+.建筑-1-hex {
+    color: #979FA6;
+}
+
+.建筑-2-hex {
+    color: #3A3E40;
+}
+
+.建筑-3-hex {
+    color: #525759;
+}
+
+.建筑-4-hex {
+    color: #D9D9D9;
+}
+
+.建筑-5-hex {
+    color: #0D0D0D;
+}
 
 /* Color Theme Swatches in RGBA */
-.建筑-1-rgba { color: rgba(150, 158, 165, 1); }
-.建筑-2-rgba { color: rgba(58, 61, 63, 1); }
-.建筑-3-rgba { color: rgba(82, 86, 89, 1); }
-.建筑-4-rgba { color: rgba(216, 216, 216, 1); }
-.建筑-5-rgba { color: rgba(12, 12, 12, 1); }
+.建筑-1-rgba {
+    color: rgba(150, 158, 165, 1);
+}
+
+.建筑-2-rgba {
+    color: rgba(58, 61, 63, 1);
+}
+
+.建筑-3-rgba {
+    color: rgba(82, 86, 89, 1);
+}
+
+.建筑-4-rgba {
+    color: rgba(216, 216, 216, 1);
+}
+
+.建筑-5-rgba {
+    color: rgba(12, 12, 12, 1);
+}
 
 /* Color Theme Swatches in HSLA */
-.建筑-1-hsla { color: hsla(208, 7, 62, 1); }
-.建筑-2-hsla { color: hsla(202, 4, 23, 1); }
-.建筑-3-hsla { color: hsla(202, 4, 33, 1); }
-.建筑-4-hsla { color: hsla(0, 0, 85, 1); }
-.建筑-5-hsla { color: hsla(0, 0, 5, 1); }
+.建筑-1-hsla {
+    color: hsla(208, 7, 62, 1);
+}
+
+.建筑-2-hsla {
+    color: hsla(202, 4, 23, 1);
+}
+
+.建筑-3-hsla {
+    color: hsla(202, 4, 33, 1);
+}
+
+.建筑-4-hsla {
+    color: hsla(0, 0, 85, 1);
+}
+
+.建筑-5-hsla {
+    color: hsla(0, 0, 5, 1);
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-color: #C98986;
+    }
+}
