@@ -147,7 +147,9 @@ nav>ul {
     padding: 5px;
 }
 
-.resume:hover {}
+.resume:hover {
+    display: none;
+}
 
 .name {
     font-size: 35px;
