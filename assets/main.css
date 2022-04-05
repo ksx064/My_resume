@@ -5,10 +5,13 @@
 }
 
 body {
+    width: auto;
     background-color: #D9D9D9;
 }
 
 header {
+    position: sticky;
+    top: 0%;
     justify-content: space-between;
 }
 
@@ -19,7 +22,6 @@ header {
 
 header,
 nav,
-main,
 .bgph1,
 .bgph2,
 .bgph3,
@@ -29,11 +31,15 @@ main,
 }
 
 .resume {
+    letter-spacing: .2em;
+    font-weight: 100;
     position: sticky;
     top: 0px;
     font-size: 35.9px;
     font-style: bold;
+    background-color: #3A3E40;
     font-family: SoukouMincho;
+    float: left;
     padding: 5px;
 }
 
@@ -41,6 +47,30 @@ main,
     content: '';
     position: absolute;
     background-color: #0D0D0D;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    left: 20px;
+    z-index: -1;
+}
+
+.resume:hover {
+    letter-spacing: .2em;
+    font-weight: 100;
+    position: sticky;
+    top: 0px;
+    font-size: 35.9px;
+    font-style: bold;
+    background-color: #0d0d0d;
+    font-family: SoukouMincho;
+    float: left;
+    padding: 5px;
+}
+
+.resume:hover::after {
+    content: '';
+    position: absolute;
+    background-color: #3A3E40;
     height: 100%;
     width: 100%;
     top: 10px;
@@ -59,8 +89,8 @@ nav {
 
 .bgph1 {
     position: sticky;
-    top: 0px;
-    left: 200px;
+    top: 46px;
+    left: 275px;
     height: 540px;
     width: 720px;
     z-index: -1;
@@ -127,6 +157,7 @@ li {
 }
 
 nav>ul {
+    padding: 0;
     margin: 0;
 }
 
@@ -136,35 +167,22 @@ nav>ul {
     justify-content: center;
 }
 
-.resume {
-    position: sticky;
-    top: 0px;
-    font-size: 35.9px;
-    font-style: bold;
-    background-color: #3A3E40;
-    font-family: SoukouMincho;
-    float: left;
-    padding: 5px;
-}
-
-.resume:hover {
-    display: none;
-}
 
 .name {
+    width: 500px;
+    letter-spacing: .4em;
     font-size: 35px;
     font-style: bold;
     font-family: SoukouMincho;
 }
 
-.name::before {
+.name::after {
     content: '';
     display: block;
     width: 80px;
-    height: 80%;
+    height: 125px;
     position: absolute;
     bottom: -5px;
-    right: 0;
     z-index: -1;
     background-color: #525759;
 }
