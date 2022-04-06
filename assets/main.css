@@ -89,7 +89,7 @@ nav {
 
 .bgph1 {
     position: sticky;
-    top: 46px;
+    top: 66px;
     left: 275px;
     height: 540px;
     width: 720px;
@@ -133,7 +133,7 @@ main {
     width: 100%;
     padding: 20px;
     margin: auto;
-    height: 800px;
+    height: 700px;
 }
 
 .i {
