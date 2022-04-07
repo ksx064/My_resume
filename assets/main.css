@@ -66,6 +66,7 @@ nav,
     font-family: SoukouMincho;
     float: left;
     padding: 5px;
+    transition: background-color .5s ease-in-out;
 }
 
 .resume:hover::after {
@@ -77,6 +78,7 @@ nav,
     top: 10px;
     left: 20px;
     z-index: -1;
+    transition: background-color .5s ease-in-out;
 }
 
 nav {
@@ -110,7 +112,8 @@ nav {
 
 .bgph2 {
     position: sticky;
-    top: 100px;
+    margin-top: 10px;
+    top: 0px;
     right: 0px;
     height: 640px;
     width: 644.5px;
@@ -131,11 +134,12 @@ main {
 }
 
 .container {
-    position: absolute;
+    position: static;
     width: 100%;
     padding: 20px;
     margin: auto;
     height: 700px;
+    flex-flow: row nowrap;
 }
 
 .i {
@@ -156,6 +160,7 @@ li {
 .nav a:hover {
     background-color: #0D0D0D;
     border-radius: 25px;
+    transition: background-color .4s ease-in-out;
 }
 
 nav>ul {
@@ -178,13 +183,35 @@ nav>ul {
     font-family: SoukouMincho;
 }
 
-.name::after {
+.name::before {
     content: '';
     display: block;
-    width: 80px;
-    height: 125px;
+    width: 300px;
+    height: 80px;
     position: absolute;
-    bottom: -5px;
+    left: 100px;
+    bottom: 100px;
+    z-index: -1;
+    background-color: white;
+}
+.college {
+    position: static;
+    top: 0px;
+    right: 500px;
+    width: 500px;
+    letter-spacing: .4em;
+    font-size: 35px;
+    font-style: bold;
+    font-family: SoukouMincho;
+}
+
+.college::after {
+    content: '';
+    display: block;
+    width: 260px;
+    height: 80px;
+    position: static;
+    bottom: 50px;
     z-index: -1;
     background-color: #525759;
 }
