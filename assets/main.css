@@ -26,8 +26,7 @@ nav,
 .bgph2,
 .bgph3,
 .nav,
-.resume
-.container {
+.resume .container {
     display: flex;
 }
 
@@ -92,7 +91,7 @@ nav {
 
 .bgph1 {
     position: sticky;
-    top: 66px;
+    top: 50px;
     left: 275px;
     height: 540px;
     width: 720px;
@@ -113,7 +112,7 @@ nav {
 .bgph2 {
     position: sticky;
     margin-top: 10px;
-    top: 0px;
+    top: 50px;
     right: 0px;
     height: 640px;
     width: 644.5px;
@@ -134,11 +133,10 @@ main {
 }
 
 .container {
-    position: static;
+    position: relative;
     width: 100%;
-    padding: 20px;
-    margin: auto;
-    height: 700px;
+    padding: 25px;
+    margin: 25px;
     flex-flow: row nowrap;
 }
 
@@ -194,24 +192,28 @@ nav>ul {
     z-index: -1;
     background-color: white;
 }
+
 .college {
-    position: static;
+    color: white;
+    position: sticky;
     top: 0px;
-    right: 500px;
+    left: 400px;
     width: 500px;
+    height: 80px;
     letter-spacing: .4em;
     font-size: 35px;
     font-style: bold;
     font-family: SoukouMincho;
+    z-index: 0;
 }
 
-.college::after {
+.college::before {
     content: '';
     display: block;
     width: 260px;
     height: 80px;
-    position: static;
-    bottom: 50px;
+    position: absolute;
+    top: -20px;
     z-index: -1;
     background-color: #525759;
 }
