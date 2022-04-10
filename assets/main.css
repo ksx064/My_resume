@@ -26,7 +26,7 @@ nav,
 .bgph2,
 .bgph3,
 .nav,
-.resume .container {
+.resume {
     display: flex;
 }
 
@@ -94,7 +94,6 @@ nav {
     top: 50px;
     left: 275px;
     height: 540px;
-    width: 720px;
     z-index: -1;
 }
 
@@ -129,16 +128,21 @@ nav {
 }
 
 main {
-    flex-flow: row wrap;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    padding: 25px;
-    margin: 25px;
     flex-flow: row nowrap;
 }
+
+.container1,
+.container2,
+.container3 {
+    position: relative;
+    width: 100%;
+    padding: 75px;
+    margin: 0px;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.container2 {}
 
 .i {
     display: none;
@@ -188,7 +192,7 @@ nav>ul {
     height: 80px;
     position: absolute;
     left: 100px;
-    bottom: 100px;
+    bottom: 0px;
     z-index: -1;
     background-color: white;
 }
