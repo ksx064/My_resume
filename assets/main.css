@@ -58,6 +58,7 @@ nav {
     float: right;
     padding: 5px;
 }
+
 .nav {
     color: #D9D9D9;
     display: flex;
@@ -69,6 +70,7 @@ nav {
     float: right;
     padding: 5px;
 }
+
 nav a {
     color: inherit;
     display: inline-block;
@@ -82,18 +84,21 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
+
 nav a:hover {
     color: white;
     background-color: #0D0D0D;
     border-radius: 25px;
     transition: background-color .4s ease-in-out;
 }
+
 .nav a:hover {
     color: white;
     background-color: #0D0D0D;
     border-radius: 25px;
     transition: background-color .4s ease-in-out;
 }
+
 ul {
     display: flex;
     padding: 0;
@@ -236,8 +241,8 @@ main {
 }
 
 .pr {
-   columns: 1 auto;
-   width: 50%;
+    columns: 1 auto;
+    width: 50%;
 }
 
 .pj1 {
@@ -383,7 +388,7 @@ footer {
     z-index: -5;
 }
 
-.con{
+.con {
     width: 100%;
     font-size: 35px;
     font-family: SoukouMincho;
@@ -392,6 +397,7 @@ footer {
     margin-bottom: 1%;
     padding: 10px;
 }
+
 @media screen and (max-width: 720px) {
     body {
         background-color: #C98986;
